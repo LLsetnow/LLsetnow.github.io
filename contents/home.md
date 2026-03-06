@@ -6,9 +6,9 @@ He is currently a Fellow in the Department of Earth and Planetary Sciences (EPS)
 
 #### 联系方式
 
-电话：17280019014
-邮箱: 22040932@hdu.edu.cn
-微信：f70004500
+电话：17280019014 \n
+邮箱: 22040932@hdu.edu.cn \n
+微信：f70004500 \n
 
 #### 教育背景
 
