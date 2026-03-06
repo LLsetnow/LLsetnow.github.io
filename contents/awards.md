@@ -1,12 +1,4 @@
 
-- Outstanding Graduate Award (CUMT), 2025.
+- [第十九届全国大学生智能车竞赛一等奖(第一名)](static\assets\img\awards1.jpg)    2024.8
 
-- National Scholarship for Graduate Students (Ministry of Education, China), 2024.
 
-- First-Prize Graduate Academic Scholarship (CUMT), 2023 & 2024.
-
-- Outstanding Undergraduate Thesis Award (Jiangsu, China), 2022.
-
-- First-Prize Corporate Scholarship (CUMT), 2020.
-
-- First-Prize Undergraduate Academic Scholarship (CUMT), 2019.
