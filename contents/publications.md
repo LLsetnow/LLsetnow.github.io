@@ -1,16 +1,13 @@
 #### 科研经历
 
-- <strong>S. Li</strong>*, X. Yang, S. M. Mousavi, A. Cao, K. Fan, Y. Liu, C. Wang, and Q. Niu. Learning Earthquake Wave Arrival Time Picking from Labels with Inaccuracies. <strong>Under Review</strong> [[Code]](https://github.com/senli1073/LaNCor)
+- **基于深度学习的水下目标实时检测与跟踪技术研究** — 毕业论文
 
-#### Published
+  **研究背景**：已有研究表明，基于深度学习的水下目标检测技术已取得显著进展，然而对实时跟踪算法的研究较少，水下环境复杂多变，现有算法适应性和实时性有待提升。
 
-- X. Yang, <strong>S. Li</strong>, A. Cao*, C. Wang*, Y. Liu, X. Bai, and Q. Niu (2024). Deep Transfer Learning for P-wave Arrival Identification and Automatic Seismic Source Location in Underground Mines. <strong>International Journal of Rock Mechanics and Mining Sciences</strong>. [[Paper]](https://doi.org/10.1016/j.ijrmms.2024.105888)
+  **关键步骤**：
+  - 数据集构建：从URPC数据集中筛选1000张高质量图像，构建训练集800张、测试集200张
+  - 模型训练：基于PP-YOLOE预训练模型，使用AIstudio云算力平台训练水下目标检测模型
+  - 跟踪实现：基于ByteTrack算法实现实时多目标跟踪，集成检测与跟踪系统
 
-- <strong>S. Li</strong>, X. Yang*, A. Cao*, C. Wang, Y. Liu, Y. Liu, and Q. Niu (2024). SeisT: A Foundational Deep-Learning Model for Earthquake Monitoring Tasks. <strong>IEEE Transactions on Geoscience and Remote Sensing</strong>. [[Paper]](https://doi.org/10.1109/TGRS.2024.3371503) [[Code]](https://github.com/senli1073/SeisT)
-
-- A. Cao, X. Yang, C. Wang*, <strong>S. Li</strong>, Y. Liu, L. Dou, and Q. Niu (2023). High-Precision Phase Picking and Automatic Source Locating Method for Seismicity in Mines Based on Deep Transfer Learning. <strong>Journal of China Coal Society</strong>. [[Paper]](https://doi.org/10.13225/j.cnki.jccs.2023.0095)
-
-- A. Cao, Y. Liu, X. Yang*, <strong>S. Li</strong>, C. Wang, X. Bai, and Y. Liu (2022). Physical Index and Data Fusion-Driven Method for Coal Burst Prediction in Time Sequence. <strong>Journal of China Coal Society</strong>. [[Paper]](https://doi.org/10.13225/j.cnki.jccs.2022.0680)
-
-- X. Yang, X. Yu, C. Zhang, <strong>S. Li</strong>, and Q. Niu (2021). MineGPS: Battery-Free Localization Base Station for Coal Mine Environment. <strong>IEEE Communications Letters</strong>. [[Paper]](https://doi.org/10.1109/LCOMM.2021.3081593)
+  **最终结果**：预期构建实时水下目标检测与跟踪系统，在检测精度（mAP）和帧率（FPS）方面取得显著提升，为水下机器人导航、潜水员监控等应用提供技术支持。
 
