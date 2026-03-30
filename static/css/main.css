@@ -31,6 +31,39 @@ body {
     border-bottom: solid 2px var(--bs-blue);
     background-color: var(--nav-bg);
     z-index: 10000;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Navigation text colors */
+.header .navbar-brand,
+.header .nav-link {
+    color: var(--text-color) !important;
+    transition: color 0.3s ease;
+}
+
+.header .navbar-brand:hover,
+.header .nav-link:hover {
+    color: var(--h-title-color) !important;
+}
+
+/* Navbar toggler button */
+.header .navbar-toggler {
+    border-color: var(--text-color);
+    color: var(--text-color);
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.header .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+[data-theme="dark"] .header .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28228, 228, 228, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Dark mode navigation border */
+[data-theme="dark"] .header {
+    border-bottom-color: #6b7aff;
 }
 
 .bg-bottom {
