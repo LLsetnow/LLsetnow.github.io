@@ -1,0 +1,6 @@
+README.md
+setup.py
+PDFtoJPG.egg-info/PKG-INFO
+PDFtoJPG.egg-info/SOURCES.txt
+PDFtoJPG.egg-info/dependency_links.txt
+PDFtoJPG.egg-info/top_level.txt

@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: PDFtoJPG
+Version: 1.0
+Summary: 将PDF文件逐页转换为JPG图像
+Dynamic: summary
