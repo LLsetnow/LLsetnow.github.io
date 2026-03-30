@@ -29,9 +29,15 @@ body {
 
 .header {
     border-bottom: solid 2px var(--bs-blue);
-    background-color: var(--nav-bg);
+    background-color: var(--nav-bg) !important;
     z-index: 10000;
     transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Dark mode navigation border and background override */
+[data-theme="dark"] .header {
+    border-bottom-color: #6b7aff;
+    background-color: #2d2d2d !important;
 }
 
 /* Navigation text colors */
@@ -61,9 +67,18 @@ body {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28228, 228, 228, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-/* Dark mode navigation border */
-[data-theme="dark"] .header {
-    border-bottom-color: #6b7aff;
+/* Dropdown menu in dark mode */
+[data-theme="dark"] .header .dropdown-menu {
+    background-color: #2d2d2d !important;
+}
+
+[data-theme="dark"] .header .dropdown-item {
+    color: #e0e0e0 !important;
+}
+
+[data-theme="dark"] .header .dropdown-item:hover {
+    background-color: #3a3a3a !important;
+    color: #6b7aff !important;
 }
 
 .bg-bottom {
