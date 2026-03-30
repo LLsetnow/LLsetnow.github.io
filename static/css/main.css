@@ -3,10 +3,33 @@
 
 :root{
     --h-title-color:#3948d2;
+    --bg-light: #fcfcfc;
+    --bg-light-alt: #ffffff;
+    --bg-gray: #f0f0f0;
+    --bg-gray-alt: #f1f1f1;
+    --text-color: #212529;
+    --nav-bg: #f8f9fa;
+}
+
+[data-theme="dark"] {
+    --h-title-color: #6b7aff;
+    --bg-light: #1a1a1a;
+    --bg-light-alt: #212121;
+    --bg-gray: #252525;
+    --bg-gray-alt: #2d2d2d;
+    --text-color: #e0e0e0;
+    --nav-bg: #2d2d2d;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .header {
     border-bottom: solid 2px var(--bs-blue);
+    background-color: var(--nav-bg);
     z-index: 10000;
 }
 
@@ -52,15 +75,16 @@ section .main-body{
     font-size: 1.3rem;
     font-weight: 200;
     line-height: 2.4rem;
+    color: var(--text-color);
 }
 
 
 .bg-gradient-primary-to-secondary-light {
-    background: linear-gradient(45deg, #fcfcfc, #ffffff) !important;
+    background: linear-gradient(45deg, var(--bg-light), var(--bg-light-alt)) !important;
 }
 
 .bg-gradient-primary-to-secondary-gray {
-    background: linear-gradient(45deg, #f0f0f0, #f1f1f1) !important;
+    background: linear-gradient(45deg, var(--bg-gray), var(--bg-gray-alt)) !important;
 }
 
 
@@ -107,6 +131,46 @@ section .main-body{
     #avatar {
         margin: 0;
     }
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10001;
+    background: var(--nav-bg);
+    border: 2px solid var(--h-title-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.theme-toggle svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--h-title-color);
+    transition: fill 0.3s ease;
+}
+
+[data-theme="dark"] .theme-toggle {
+    background: #3a3a3a;
+    border-color: #6b7aff;
+}
+
+[data-theme="dark"] .theme-toggle svg {
+    fill: #6b7aff;
 }
 
 
